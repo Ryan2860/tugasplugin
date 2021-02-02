@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Mahasiswa = {
+    nama: 'Rian',
+    kelas: '3D',
+    alamat: 'jalan Banyumas rt02 rw09 margadana',
+    displayType: function() {
+      console.log('Nama '+this.nama);
+      console.log('Kelas '+this.kelas);
+      console.log('Alamat '+this.alamat);
+      console.log('Hobi '+ this.hobi);
+      console.log('');
+    }
+  };
+
+  var mahasiswa1 = Object.create(Mahasiswa);
+  mahasiswa1.displayType();
+  
+  var mahasiswa2 = Object.create(Mahasiswa);
+  mahasiswa2.nama = 'yudis';
+  mahasiswa2.kelas = '3A';
+  mahasiswa2.alamat = 'jalan probolinggo ';
+  mahasiswa2.hobi = 'futsal';
+  mahasiswa2.displayType();
+        </script>
+</body>
+</html>

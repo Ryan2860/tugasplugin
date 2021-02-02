@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+  function checkGrade(nilai){
+
+    if ( nilai > 79 && nilai <= 100) {
+      console.log("A");
+    } else if(nilai > 65 && nilai <= 79) {
+      console.log("B");
+    } else if(nilai > 50 && nilai <=65 ){
+      console.log("C");
+    } else if(nilai <= 50 ){
+      console.log("D");
+    }else{
+      console.log("Anda Terlalu Cerdas!");
+    }
+  
+  }
+  
+  checkGrade((80))
+  checkGrade((79))
+  checkGrade((65))
+  checkGrade((50))
+  checkGrade((200))
+
+</script>
+</body>
+</html>
